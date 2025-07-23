@@ -254,10 +254,8 @@ Special thanks to the **100X Prompt** team for:
 ## 📞 Support & Community
 
 ### **Get Help**
-- 📧 Email: support@100xprompt.com
-- 💬 Discord: [100X Prompt Community](https://discord.gg/100xprompt)
-- 🐛 Issues: [GitHub Issues](https://github.com/100xprompt/youtube-for-quantum-mechanics/issues)
-- 📖 Docs: [Full Documentation](https://docs.100xprompt.com)
+- 📧 Email: nipurn.agarwal@100xprompt.com
+
 
 ### **Stay Connected**
 - 🌐 Website: [100xprompt.com](https://100xprompt.com)
