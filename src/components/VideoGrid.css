@@ -1,0 +1,147 @@
+.video-grid-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.filter-header {
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #303030;
+}
+
+.filter-header h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  background: linear-gradient(45deg, #3ea6ff, #00d4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.filter-header p {
+  font-size: 16px;
+  color: #aaa;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.video-count {
+  font-size: 14px;
+  color: #717171;
+  font-weight: 500;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.no-videos {
+  text-align: center;
+  padding: 60px 20px;
+  color: #aaa;
+}
+
+.no-videos-icon {
+  font-size: 64px;
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+.no-videos h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.no-videos p {
+  font-size: 16px;
+  color: #717171;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .video-grid {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-grid-container {
+    padding: 0 10px;
+  }
+
+  .filter-header h2 {
+    font-size: 24px;
+  }
+
+  .filter-header p {
+    font-size: 14px;
+  }
+
+  .video-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .filter-header {
+    margin-bottom: 24px;
+  }
+
+  .filter-header h2 {
+    font-size: 20px;
+  }
+}
+
+/* Loading animation */
+.video-grid.loading {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* Fade-in animation for videos */
+.video-grid {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Filter transitions */
+.filter-header {
+  transition: all 0.3s ease;
+}
+
+.video-count {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 12px;
+  background-color: #1a1a1a;
+  border-radius: 16px;
+  border: 1px solid #303030;
+}
+
+.video-count::before {
+  content: '📊';
+  font-size: 12px;
+}
